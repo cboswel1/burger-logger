@@ -1,38 +1,13 @@
-<h1>Big Kahuna Burgers!</h1>
-
-<h2>That's a tasty burger!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Open To; 11pm - Drive Thru Til 12</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>What's your Tasty Burger?!</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="bu">Burger Name:</label>
-    <input type="text" id="bu" name="burger_name">
-  </div>
-
-  <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Ummmmm!
-  </div>
-
-  <button type="submit">Add Burger</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+		<title>Big Kahuna Burger!</title>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/assets/js/burgers.js"></script>
+</head>
+<body>
+     {{{ body }}}
+</body>
+</html>
