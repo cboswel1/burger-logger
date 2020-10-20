@@ -8,7 +8,7 @@ const router = express.Router();
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
     burger.selectAll(function(data) {
-      var hbsObject = {
+      const hbsObject = {
         burgers: data
       };
       console.log(hbsObject);
@@ -28,7 +28,7 @@ router.get("/", function(req, res) {
   });
   
   router.put("/api/burgers/:id", function(req, res) {
-    var condition = "id = " + req.params.id;
+    const condition = "id = " + req.params.id;
   
     console.log("condition", condition);
   
@@ -41,6 +41,19 @@ router.get("/", function(req, res) {
       } else {
         res.status(200).end();
       }
+    });
+  });
+
+  router.delete("api/burger/:id", function(req, res) {
+
+      const condition = "id =" + req.params.id; 
+
+      burger.delete(condition, function(result) {
+        if (result.modRows == 0) {
+            return res.status(404).end(); 
+        } else {
+            res.status(200).end();
+        }
     });
   });
 
