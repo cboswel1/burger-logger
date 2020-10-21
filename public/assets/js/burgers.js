@@ -1,12 +1,13 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-    $(".change-devour").on("click", function(event) {
+    $(".devoured-btn").on("click", function() {
       var id = $(this).data("id");
-      var newSleep = $(this).data("newdevour");
-  
+      var newDevour = $(this).data("newdevour");
+
       var newDevourState = {
         devoured: newDevour
       };
+  
   
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
@@ -21,26 +22,26 @@ $(function() {
       );
     });
   
-    $(".create-form").on("submit", function(event) {
+
+    $(".createOrder").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      var newBurger = {
-        name: $("#bu").val().trim(),
-        sleepy: $("[name=devoured]:checked").val().trim()
+      let newBurger = {
+        burger_name: $("createOrder [name=burger]").val()
       };
+      
+      
   
       // Send the POST request.
       $.ajax("/api/burgers", {
         type: "POST",
         data: newBurger
-      }).then(
-        function() {
+      }).then(function() {
           console.log("created new burger");
           // Reload the page to get the updated list
           location.reload();
-        }
-      );
+        });
     });
   });
   

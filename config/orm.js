@@ -1,5 +1,5 @@
 //Import (require) `connection.js` into `orm.js`
-const connection = require("../config/connection.js");
+const connection = require("../config/connection");
 
 //helper function for SQL syntax
 function printQuestionMarks(num) {
@@ -35,8 +35,9 @@ function objToSql(ob) {
 //In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
 // Object for all our SQL statement functions.
 var orm = {
-    selectAll: function(tableInput, cb) {
-      var queryString = "SELECT * FROM " + tableInput + ";";
+    selectAll: function(table, cb) {
+      var queryString = "SELECT * FROM " + table + ";";
+      
       connection.query(queryString, function(err, result) {
         if (err) {
           throw err;
@@ -82,18 +83,6 @@ var orm = {
         cb(result);
       });
     },
-    delete: function(table, condition, cb) {
-        const queryString = "DELETE FROM " + table; 
-        queryString += " WHERE "; 
-        queryString += condition; 
-
-        connection.query(queryString, function(err, result) {
-            if (err) {
-              throw err;
-            }
-            cb(result); 
-    });
-   }
   };
   
   // Export the orm object for the model (cat.js).
