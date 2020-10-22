@@ -27,7 +27,7 @@ This repository can be cloned from Github.com/cboswel1/burger-logger. You must h
   - [Handlebars](https://handlebarsjs.com/)
 
 ## Preview 
-<img src="https://github.com/cboswel1/burger-logger/blob/main/public/assets/img/Screen%20Shot%202020-10-21%20at%209.48.41%20PM.png?raw=true" height="256" title="Home Screen">
+<img src="https://github.com/cboswel1/burger-logger/blob/main/public/assets/img/Screen%20Shot%202020-10-22%20at%203.15.58%20PM.png?raw=true">
 
 
 ## Live Preview 
