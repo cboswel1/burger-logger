@@ -1,50 +1,53 @@
-<img src="/assets/img/bigkauna.png">
+<!-- Header -->
+<header class="container-fluid">
+  <img src="/assets/img/bigkauna.png">
+</header>
 
-<h1>Hamburgers: the cornerstone of any nutritious breakfast</h1>
+<main class="container-fluid">
+  <h1>Hamburgers: the cornerstone of any nutritious breakfast</h1>
 
-<h2>That's a tasty burger!</h2>
-
+  <h2 class="sub-head">That's a tasty burger!</h2>
+</main>
 <!-- Burgers list -->
 
 <div class="container-fluid">
 
-<div class="row justify-content-md-center">
+  <div class="row justify-content-md-center burger-row">
 
-<div class="col col-md-auto">
-  <h3>Menu</h3>
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-          {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+    <div class="col col-md-auto">
+      <h3>Menu</h3>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devour=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col col-md-auto">
+      <h3>Burgers You've Crushed</h3>
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devour=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
 </div>
 
-<div class="col col-md-auto">
-  <h3>Burgers You've Crushed</h3>
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-           {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-</div>
-</div>
-</div>
-<h2>Add a Burger</h2>
+<!-- Create your own Burger input -->
+<h2 class="sub-head">Add a Burger</h2>
 <form id="createOrder">
   <div class="form-group">
-    <label for ="bu"></label>
+    <label for="bu"></label>
     <input type="text" placeholder="Your Burger Here!" id="bu" name="burger_name" class="burger-form">
     <br>
     <h4 class="burger-button">Click Me</h4>
-    <button type="submit" id="bu" name="burger_name"><img class="burgerpic" src="/assets/img/slj.png"></button>
+    <button type="submit" id="bu" name="burger_name"><img class="burgerpic" src="/assets/img/slj.png"
+        alt="Samuel L Jackson eating a burger"></button>
     <h4>To Add</h4>
   </div>
-  {{!-- <textarea type="text" name="burger_name"></textarea>
-    <button type="submit" id="bu" name="burger_name">Order Up!</button> --}}
 </form>
-
-

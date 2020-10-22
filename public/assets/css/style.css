@@ -21,8 +21,8 @@ h1, h2, h3 {
 }
 
 .burgerpic {
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
 }
 
 .burger-form {
@@ -31,4 +31,12 @@ h1, h2, h3 {
 
 .burger-button {
   margin-top: 20px;
+}
+
+.burger-row {
+  margin-top:80px ;
+}
+
+.sub-head {
+  margin-top: 30px;
 }
