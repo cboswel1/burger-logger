@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/npm?color=blue&logo=npm)](https://www.npmjs.com/package/inquirer)
 
 
-The burger logger is a restaurant application that lets a user view a menu or burgers or enter a custom burger they'd like to eat, that will then be displayed. This application utilizes MySQL, Node, Express, Handlebars, and a custom ORM. 
+The burger logger is a restaurant application that lets a user view a menu of burgers or enter a custom burger they'd like to eat, that will then be displayed on the menu, awaiting to be devoured. This application utilizes MySQL, Node, Express, Handlebars, and a custom ORM. 
 
 
 ## Table of Contents 
