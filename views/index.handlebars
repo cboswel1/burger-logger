@@ -10,7 +10,7 @@
 
 <div class="row justify-content-md-center">
 
-<div class="col-4">
+<div class="col col-md-auto">
   <h3>Menu</h3>
 <ul>
   {{#each burgers}}
@@ -21,7 +21,7 @@
 </ul>
 </div>
 
-<div class="col-4">
+<div class="col col-md-auto">
   <h3>Burgers You've Crushed</h3>
 <ul>
   {{#each burgers}}
@@ -34,9 +34,17 @@
 </div>
 </div>
 <h2>Add a Burger</h2>
-<form class="createOrder">
-  <textarea type="text" name="burger"></textarea>
-    <button type="submit">Order Up!</button>
+<form id="createOrder">
+  <div class="form-group">
+    <label for ="bu"></label>
+    <input type="text" placeholder="Your Burger Here!" id="bu" name="burger_name" class="burger-form">
+    <br>
+    <h4 class="burger-button">Click Me</h4>
+    <button type="submit" id="bu" name="burger_name"><img class="burgerpic" src="/assets/img/slj.png"></button>
+    <h4>To Add</h4>
+  </div>
+  {{!-- <textarea type="text" name="burger_name"></textarea>
+    <button type="submit" id="bu" name="burger_name">Order Up!</button> --}}
 </form>
 
 

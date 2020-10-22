@@ -23,14 +23,13 @@ $(function() {
     });
   
 
-    $(".createOrder").on("submit", function(event) {
+    $("#createOrder").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
-  
-      let newBurger = {
-        burger_name: $("createOrder [name=burger]").val()
-      };
       
+      var newBurger = {
+        burger_name: $("#bu").val().trim(),
+      };
       
   
       // Send the POST request.

@@ -1,3 +1,7 @@
+body {
+  background-color: #F8E9A1;
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -12,6 +16,19 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-.createOrder {
+#createOrder {
   text-align: center;
+}
+
+.burgerpic {
+  width: 64px;
+  height: 64px;
+}
+
+.burger-form {
+  text-align: center;
+}
+
+.burger-button {
+  margin-top: 20px;
 }
