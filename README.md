@@ -1,7 +1,7 @@
 # burger-logger
 
 ![](https://img.shields.io/badge/license-MIT-yellow)
-[![node.js](https://img.shields.io/node/v/c?color=pink)](https://nodejs.org/en/)
+![node-current](https://img.shields.io/node/v/c?color=gr)
 [![npm](https://img.shields.io/npm/v/npm?color=blue&logo=npm)](https://www.npmjs.com/package/inquirer)
 
 
