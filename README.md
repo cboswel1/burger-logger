@@ -31,7 +31,7 @@ This repository can be cloned from Github.com/cboswel1/burger-logger. You must h
 
 
 ## Live Preview 
-[Preview](https://youtu.be/rpb3aoB5EOM)
+[Preview](https://www.youtube.com/watch?v=dSfFmn64LIU)
 
 
 ## License
