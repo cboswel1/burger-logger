@@ -11,9 +11,17 @@ img {
 }
 
 h1, h2, h3 {
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  padding-top: 2em;
+}
+
+.menu-titles {
+  text-decoration: black;
 }
 
 #createOrder {
@@ -21,8 +29,8 @@ h1, h2, h3 {
 }
 
 .burgerpic {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
 }
 
 .burger-form {
@@ -40,3 +48,26 @@ h1, h2, h3 {
 .sub-head {
   margin-top: 30px;
 }
+
+ul {
+  font-size: 25px;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+}
+
+li {
+  background-color: #E98074;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+}
+
